@@ -1,6 +1,7 @@
 # Vagrant
-Install and run Vagrant + Virtualbox
-------------------------------------
+Vagrant works wonders... unlike my past relationships 
+
+# Install and run Vagrant + Virtualbox
 1. yum install -y https://releases.hashicorp.com/vagrant/2.2.4/vagrant_2.2.4_x86_64.rpm
 2. yum install -y https://rpmfind.net/linux/centos/7.6.1810/os/x86_64/Packages/SDL-1.2.15-14.el7.x86_64.rpm
 3. vim /etc/yum.repos.d/centos.repo
