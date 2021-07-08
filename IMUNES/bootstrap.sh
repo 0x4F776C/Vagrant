@@ -16,5 +16,9 @@ sudo rmdir /media/VBoxGuestAdditions
 cd /opt
 sudo git clone https://github.com/imunes/imunes.git
 
+sudo docker pull imunes/template
+sudo docker pull 0x4f776c/imunes-kali
+sudo docker pull 0x4f776c/imunes-node
+
 cd imunes
 sudo make install
