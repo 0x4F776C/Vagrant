@@ -15,7 +15,7 @@ cd /opt
 sudo git clone https://github.com/imunes/imunes.git
 
 sudo docker pull imunes/template
-# Uncomment if you want to use any of them
+# Uncomment if you want to use
 #sudo docker pull 0x4f776c/imunes-kali
 #sudo docker pull 0x4f776c/imunes-node
 #sudo docker pull 0x4f776c/imunes-honeyd
