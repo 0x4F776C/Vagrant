@@ -1,7 +1,9 @@
 #!/bin/bash
 
 apt update -y
-apt install -y openvswitch-switch docker.io xterm wireshark make imagemagick tk tcllib util-linux git-all linux-headers-$(uname -r) build-essential dkms
+apt install -y openvswitch-switch docker.io xterm wireshark make imagemagick tk tcllib util-linux git-all linux-headers-$(uname -r) build-essential dkms tmux vim
+
+sudo usermod -aG docker $USER
 
 wget http://download.virtualbox.org/virtualbox/6.1.22/VBoxGuestAdditions_6.1.22.iso
 sudo mkdir /media/VBoxGuestAdditions
