@@ -3,8 +3,6 @@
 apt update -y
 apt install -y openvswitch-switch docker.io xterm wireshark make imagemagick tk tcllib util-linux git-all linux-headers-$(uname -r) build-essential dkms tmux vim
 
-sudo usermod -aG docker $USER
-
 wget http://download.virtualbox.org/virtualbox/6.1.22/VBoxGuestAdditions_6.1.22.iso
 sudo mkdir /media/VBoxGuestAdditions
 sudo mount -o loop,ro VBoxGuestAdditions_6.1.22.iso /media/VBoxGuestAdditions
@@ -17,8 +15,10 @@ cd /opt
 sudo git clone https://github.com/imunes/imunes.git
 
 sudo docker pull imunes/template
-sudo docker pull 0x4f776c/imunes-kali
-sudo docker pull 0x4f776c/imunes-node
+# Uncomment if you want to use any of them
+#sudo docker pull 0x4f776c/imunes-kali
+#sudo docker pull 0x4f776c/imunes-node
+#sudo docker pull 0x4f776c/imunes-honeyd
 
 cd imunes
 sudo make install
